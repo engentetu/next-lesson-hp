@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import Image from "next/image";
 
-const Contact = () => {
+export default function Contact() {
   return (
     <Layout title="Contact">
       <div
@@ -27,13 +27,12 @@ const Contact = () => {
           ></Image>
         </div>
         <div className="mt-4">
-            <p className="font-bold">Address</p>
-            <p className="text-xs mt-2 text-gray-600">Nagano</p>
-            <p className="font-bold mt-3">Email</p>
-            <p className="text-xs mt-2 text-gray-600">Nagano@Nagano.com</p>
-            <p className="font-bold mt-3">Phone</p>
-            <p className="text-xs mt-2 text-gray-600">12345678</p>
-
+          <p className="font-bold">Address</p>
+          <p className="text-xs mt-2 text-gray-600">Nagano</p>
+          <p className="font-bold mt-3">Email</p>
+          <p className="text-xs mt-2 text-gray-600">Nagano@Nagano.com</p>
+          <p className="font-bold mt-3">Phone</p>
+          <p className="text-xs mt-2 text-gray-600">12345678</p>
         </div>
         <div className="mt-6 flex justify-around">
           <div>
@@ -86,10 +85,7 @@ const Contact = () => {
             </a>
           </div>
         </div>
- 
       </div>
     </Layout>
   );
-};
-
-export default Contact;
+}
